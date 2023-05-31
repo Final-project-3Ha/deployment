@@ -37,7 +37,7 @@ const HeaderComponent = () => {
   };
   const [isAdmin , setIsAdmin] = useState(false);
 useEffect(() => {
-console.log(JSON.parse(localStorage.userInfo));
+console.log(JSON.parse(localStorage.getItem("userInfo")));
 } , [])
   return (
     <Navbar collapseOnSelect expand="lg" variant="dark" style={navbarStyle}>
